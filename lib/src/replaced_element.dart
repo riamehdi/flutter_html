@@ -269,28 +269,6 @@ class VideoContentElement extends ReplacedElement {
   }
 }
 
-/// [SvgContentElement] is a [ReplacedElement] with an SVG as its contents.
-class SvgContentElement extends ReplacedElement {
-  final String data;
-  final double width;
-  final double height;
-
-  SvgContentElement({
-    this.data,
-    this.width,
-    this.height,
-  });
-
-  @override
-  Widget toWidget(RenderContext context) {
-    return SvgPicture.string(
-      data,
-      width: width,
-      height: height,
-    );
-  }
-}
-
 class EmptyContentElement extends ReplacedElement {
   EmptyContentElement({String name = "empty"}) : super(name: name);
 
