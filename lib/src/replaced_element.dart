@@ -6,7 +6,6 @@ import 'package:chewie_audio/chewie_audio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_html/src/utils.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:video_player/video_player.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter/material.dart';
@@ -400,12 +399,6 @@ ReplacedElement parseReplacedElement(dom.Element element) {
         width: double.tryParse(element.attributes['width'] ?? ""),
         height: double.tryParse(element.attributes['height'] ?? ""),
         node: element,
-      );
-    case "svg":
-      return SvgContentElement(
-        data: element.outerHtml,
-        width: double.tryParse(element.attributes['width'] ?? ""),
-        height: double.tryParse(element.attributes['height'] ?? ""),
       );
     case "ruby":
       return RubyElement(

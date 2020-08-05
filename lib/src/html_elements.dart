@@ -81,7 +81,6 @@ const REPLACED_ELEMENTS = [
   "head",
   "iframe",
   "img",
-  "svg",
   "template",
   "video",
   "rp",
@@ -168,7 +167,6 @@ const TABLE_STYLE_ELEMENTS = ["col", "colgroup"];
     strong    - s [x]
     sub       - s [x]
     sup       - s [x]
-    svg       - c [x]
     table     - b [x]
     tbody     - b [x]
     td        - s [ ]
